@@ -1,0 +1,10 @@
+{
+  "name": "Extension Status",
+  "version": "0.1.0",
+  "compatible-program-version": "0.1.0-rc.4",
+  "description": "Discovers Inkdex extensions, checks source-site reachability, maintains a Discord report, and serves live per-extension status through /status.",
+  "authors": [
+    "LucifersCircle"
+  ],
+  "license": "AGPL-3.0-only"
+}
