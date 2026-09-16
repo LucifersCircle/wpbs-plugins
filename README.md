@@ -16,6 +16,12 @@ Build and install the extension status plugin into a sibling WPBS checkout:
 just install-google-ping ../wpbs
 ```
 
+Build, install, and start that WPBS checkout in development mode:
+
+```sh
+just run-dev ../wpbs
+```
+
 The install recipe writes only the built plugin and its metadata beneath
 `plugins/binaries/local/google-ping/0.1.0`. WPBS runtime configuration, state,
 credentials, databases, and logs remain in the WPBS checkout.

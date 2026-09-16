@@ -120,6 +120,10 @@ only `cf-mitigated: challenge` is treated as Cloudflare protection. A normal
 
 Required WPBS services and permissions:
 
+The host must expose the `EditMessage` Discord request from
+[wpbs-rs/wpbs#44](https://github.com/wpbs-rs/wpbs/pull/44) or a later compatible
+WPBS release.
+
 ```yaml
 services:
   job_scheduler:

@@ -27,8 +27,8 @@ install-google-ping wpbs_dir="../wpbs": build-release
   cp target/wasm32-wasip2/release/google_ping.wasm "{{wpbs_dir}}/plugins/binaries/local/google-ping/0.1.0/plugin.wasm"
   cp google-ping/metadata.json "{{wpbs_dir}}/plugins/binaries/local/google-ping/0.1.0/metadata.json"
 
-run-dev:
-  cargo run
+run-dev wpbs_dir="../wpbs": (install-google-ping wpbs_dir)
+  cd "{{wpbs_dir}}" && just run-dev
 
-run-release:
-  cargo run --release
+run-release wpbs_dir="../wpbs": (install-google-ping wpbs_dir)
+  cd "{{wpbs_dir}}" && just run-release
